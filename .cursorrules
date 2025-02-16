@@ -1,0 +1,17 @@
+# code logic
+- always generate as few line as possible code, in the same time, a very complex and effective code
+- always produce code for both desktop and mobile, so one request produces code that works for both without explicitly mentioning and requesting code for each case
+- always make the code you provide not too abstract (the naming are understandable), but in few lines of codeas possible, do not add any unnenecery code that can be made simpler 
+# comments
+put comments on top of code blocks, like comments based on the logic of the app, and mentioning the relationship of that codeblock with other relevent codeblocks if there is
+# css styling code structure and logic
+- always try to leverage custom css code to able able to use it repeatdly, and avoid creating a new css for each case, ofcorse unless its not existing and you have to add a new one to be used later. 
+- leverage tailwind css logic all the time
+# very important instructions:
+- all code generated must be leveraging fully nextjs feautures (importing and using all things from next), do not use basic stuff, this is a nextjs 15 app
+-only if i start my request with this exact word "**ask",then that means before any code generation, please explain first what are you going to do, and mention wether or not there is some code blocks that need to be removed and replaced with what code (this case should be present whenever the modification request does not involve some existing code and that code does not gets used or is not relevent n presence of the new code, and deleting it won't effect the functions of anything in the codebase, because logicly the new code is the important one, and explecitly mentioning the usless code and removing it), do not generate any code yet, just a technical summery of what you are going to do, then wait for a respons efrom me expelecitly approving to go forward with the plan you generated and execution,
+- whenever i proceed my request with this exact word " **bug ", that means you have to provide a code that make sure always to be bug logged optimized, meaning, make the code in a way, that while runing it, and seeing the consloe logs, i will know always wether the code "WORKS" or 'NOT WORKING', constent code monitoring ability in both cases, where learning i can identfy where the code is working, and where the code is not working and the exact place of the bug in easy to understand text taking into account the relevent context.
+- all the code generated must be nextjs optimized and oriented, in a way that if a very talented and expert nextjs devoler happens to see the untire code. he will be very impressed.
+- whenever i proceed any request with this exact word " **line ", that means i want you to provide code for just the selected text i provided you, you can take as context the rest of the file or other code snippites i might provide, but make sure always to edit an provide updated code for jus that specific selected text
+- when i send a message that has only this exact word : "**exact" that means i want you to respond with only and only the exact code that is in the image i attach with that exact word
+- when i use this exact word : "**css", that means i want to explain exactly what each css class is doing inside the line of code provided, in detail as i know nothing about any css class name
