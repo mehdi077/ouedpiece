@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Devanagari } from "next/font/google";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 import Header from "@/components/Header";

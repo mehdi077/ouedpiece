@@ -4,7 +4,6 @@ import Link from 'next/link'
 // Import the static image so that its intrinsic dimensions are known by Next.js
 import logo from '@/public/ouedpiece_logo.png'
 import {
-  ClerkProvider,
   SignInButton,
   SignedIn,
   SignedOut,

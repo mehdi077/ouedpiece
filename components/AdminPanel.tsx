@@ -271,7 +271,7 @@ function AdminPanel() {
             } else {
                 toast.error(result.error || 'Failed to process CSV')
             }
-        } catch (error) {
+        } catch {
             toast.error('Error uploading CSV')
         } finally {
             setIsUploading(false)
@@ -295,7 +295,7 @@ function AdminPanel() {
             } else {
                 toast.error(result.error || 'Failed to process CSV')
             }
-        } catch (error) {
+        } catch {
             toast.error('Error uploading CSV')
         } finally {
             setIsUploading(false)
@@ -355,7 +355,7 @@ function AdminPanel() {
                         <div className="p-2">
                             {brands ? (
                                 <div className="max-h-[200px] sm:max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-                                    {brands.map((brand, index) => (
+                                    {brands.map((brand) => (
                                         <div 
                                             key={brand._id} 
                                             className="p-2 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 flex items-center justify-between"
@@ -554,7 +554,7 @@ function AdminPanel() {
                         <div className="p-2">
                             {categories ? (
                                 <div className="max-h-[200px] sm:max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-                                    {categories.map((category, index) => (
+                                    {categories.map((category) => (
                                         <div 
                                             key={category._id} 
                                             className="p-2 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 flex items-center justify-between"

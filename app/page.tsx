@@ -5,7 +5,7 @@ import { api } from '@/convex/_generated/api';
 import Feed from "@/components/Feed";
 import Spinner from '@/components/Spinner';
 import Filter from '@/components/Filter';
-import { SlidersHorizontal, X, SquareX, Clock, CircleAlert } from 'lucide-react';
+import { SlidersHorizontal, X, SquareX, CircleAlert } from 'lucide-react';
 import { useState } from 'react';
 import { Id } from "@/convex/_generated/dataModel";
 import { translations } from '@/lib/translations';

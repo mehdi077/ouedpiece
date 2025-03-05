@@ -1,7 +1,7 @@
 'use client'
 
 // import { useQuery } from 'convex/react';
-import { api } from '../convex/_generated/api';
+
 import React from 'react';
 import Card from './Card';
 import { CheckCircle, Info } from 'lucide-react';
