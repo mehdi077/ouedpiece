@@ -6,9 +6,10 @@ import React from 'react';
 import Card from './Card';
 import { CheckCircle, Info } from 'lucide-react';
 import { translations } from '@/lib/translations';
+import { Id } from '@/convex/_generated/dataModel';
 
 interface Post {
-  _id: string;
+  _id: Id<"posts">;
   // Add other properties of the post object here
 }
 

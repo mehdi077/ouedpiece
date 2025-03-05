@@ -407,9 +407,9 @@ function Create() {
             </div>
             <div className="w-[300px] min-h-[39px]">
               <Select
-                value={selectedWilaya}
-                onChange={(option) => setSelectedWilaya(option)}
-                options={wilayaOptions}
+              value={selectedWilaya}
+              onChange={(option) => setSelectedWilaya(option)}
+              options={wilayaOptions}
                 className="min-h-full"
                 classNames={{
                   control: () => 'min-h-[39px] rounded-[2px] border-0 text-[13px] py-1',
@@ -418,6 +418,21 @@ function Create() {
                   valueContainer: () => 'py-1'
                 }}
                 placeholder={translations.filter.placeholders.selectWilaya}
+              />
+            </div>
+          </div>
+
+          <div className="w-full px-4 flex flex-row gap-2">
+            <div className="w-[100px] min-h-[39px] flex items-center">
+              <span className="font-bold text-[12px] text-[#041A24]">Phone :</span>
+            </div>
+            <div className="w-[300px] min-h-[39px]">
+              <input
+                type="text"
+                value={phoneNumber}
+                onChange={handlePhoneChange}
+                placeholder="Enter phone number"
+                className="w-full min-h-[39px] rounded-[2px] border-0 text-[13px] py-1 px-2 outline-none focus:ring-1 focus:ring-[#0068D7]"
               />
             </div>
           </div>

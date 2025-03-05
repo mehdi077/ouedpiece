@@ -16,13 +16,7 @@ type ToasterToast = ToastProps & {
   action?: ToastActionElement
 }
 
-// Remove actionTypes variable and inline the literals
-type ActionType = {
-  ADD_TOAST: "ADD_TOAST"
-  UPDATE_TOAST: "UPDATE_TOAST"
-  DISMISS_TOAST: "DISMISS_TOAST"
-  REMOVE_TOAST: "REMOVE_TOAST"
-}
+// Removed unused ActionType type declaration
 
 let count = 0
 
