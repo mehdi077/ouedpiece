@@ -7,8 +7,13 @@ import Card from './Card';
 import { CheckCircle, Info } from 'lucide-react';
 import { translations } from '@/lib/translations';
 
+interface Post {
+  _id: string;
+  // Add other properties of the post object here
+}
+
 interface FeedProps {
-  posts: any[];
+  posts: Post[];
 }
 
 function Feed({ posts }: FeedProps) {

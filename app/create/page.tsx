@@ -52,6 +52,10 @@ function Create() {
       </div>
     )
   }
+
+  if (isPhoneValid) {
+    console.log("phone is valid")
+  }
   
   const brandOptions = brands.map(brand => ({
     value: brand._id,
@@ -96,13 +100,13 @@ function Create() {
     );
   };
 
-  // const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const value = e.target.value.replace(/\D/g, ''); // Remove non-digits
-  //   if (value.length <= 10) {
-  //     setPhoneNumber(value);
-  //     setIsPhoneValid(value.length === 10 || value.length === 0);
-  //   }
-  // };
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value.replace(/\D/g, ''); 
+    if (value.length <= 10) {
+      setPhoneNumber(value);
+      setIsPhoneValid(value.length === 10 || value.length === 0);
+    }
+  };
 
   const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);

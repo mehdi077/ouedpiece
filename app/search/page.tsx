@@ -45,7 +45,6 @@ export default function SearchPage() {
                   className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
                 >
                   <ArrowLeft className="h-4 w-4" />
-                  <span>{translations.search.back}</span>
                 </button>
                 <div className="flex items-center gap-2 text-gray-600">
                   <Search className="h-4 w-4" />
@@ -62,7 +61,7 @@ export default function SearchPage() {
               <div className="flex items-center gap-2 p-2 bg-blue-50 border border-blue-100 rounded-sm">
                 <Search className="h-4 w-4 text-blue-500" />
                 <p className="text-sm text-blue-700 font-medium">
-                  {translations.search.results.showing}: "{query}"
+                  {translations.search.results.showing + " : " + query}
                 </p>
               </div>
             </div>
