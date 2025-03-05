@@ -9,7 +9,10 @@ import { Search, ArrowLeft } from "lucide-react";
 import SearchBar from '@/components/SearchBar';
 import { translations } from '@/lib/translations';
 
+export const dynamic = 'force-dynamic';
+
 export default function SearchPage() {
+
   const router = useRouter();
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
